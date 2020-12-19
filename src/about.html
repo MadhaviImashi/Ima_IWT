@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	      <!--<link rel ="stylesheet" type="text/css" href= "location of the stylesheet"-->
+		 <link rel="stylesheet" type= "text/css" href =  "styles/styles.css" />
+		 <link rel="stylesheet" type= "text/css" href =  "styles/formStyles.css" />
+		 <script src = "js/myScript.js"> </script>
+		 
+	     
+		 <title> My shopping cart</title>
+		 
+    </head>
+	<body>
+		<div class = "wrapper">
+			<img src = "images/cart.JFIF" width = "200" alt = "Shopping cart image" id = "logo" >
+			
+			<div class = "h">
+				<h1>Shopping Cart</h1> 
+				<h3>The online shopping store</h3>
+			</div><!--class h-->
+			
+			<hr/ class = "hrline">
+			
+			<div class = "navigator">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="about.html">Contact</a></li>
+					<li><a href="#">About</a></li>	
+				</ul> 
+			</div><!--navigator-->		
+		    
+			<br><br>
+			<form action = "#" onSubmit = "return checkPassword()">
+			
+			First Name:<br/>
+			<input type = "text"   name="firstname"   value="First name"   required><br/><br/>
+			<input type = "text"   name="lastname"    value="last name"    required><br/><br/>
+			Gender:<br/>
+			<input type = "radio"  name="gender"   checked >  Male
+			<input type = "radio"  name="gender"   checked >  female<br/><br/>
+			Mobile Number:<br/>
+			<input type = "phone"  name="mobile"  pattern="[0-9]{10}"  placeholder="123456677"   required></br></br>
+			Email: 
+			<input type = "email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-[+/.[a-z]{2,3}"  placeholder="abc@example.com"  required> <br/><br/> 
+			Address:
+			<textarea  name="address"  rows="8"  cols="50"  required> </textarea><br/><br/>
+			choose your DOB:<br/>
+			<input type = "date"   name="day"  required><br/><br/>
+			password:<br/>
+			<input type = "password"  id="pwd"  pattern="(?=.+/d) (?=.+[a-z]) (?=.+[A-Z]) . (5,10)"  required><br/><br/>
+			Re-enter password: <br/>
+		    <input type = "password"  id="cnfrmpwd"   required><br/><br/>
+			
+			<input type = "checkbox"  class="inputStyle"   id="checkbox"  onclick="enableButton(), checkPassword()"> <accept required><br/><br/>
+			
+			<center>
+			<input type = "submit"    id="submitBtn"  value="Submit"><br/><br/></center>
+			
+			</form>
+			
+			
+		</div><!--wrapper-->	
+	</body>
+</html>

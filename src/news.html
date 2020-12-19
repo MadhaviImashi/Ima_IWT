@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	      <!--<link rel ="stylesheet" type="text/css" href= "location of the stylesheet"-->
+		 <link rel="stylesheet" type= "text/css" href =  "styles/styles.css" />
+		
+		<title> My shopping cart</title> 
+		 
+    </head>
+	<body>
+		<div class = "wrapper">
+			 <script>
+				document.write(Date());
+			 </script>
+			 
+			<img src = "images/cart.JFIF" width = "200" alt = "Shopping cart image" id = "logo" >
+			
+			<div class = "h">
+				<h1>Shopping Cart</h1> 
+				<h3>The online shopping store</h3>
+			</div><!--class h-->
+			
+			<hr/ class = "hrline">
+			
+			<div class = "navigator">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="about.html">Contact</a></li>
+					<li><a href="#">About</a></li>	
+				</ul> 
+			</div><!--navigator-->	
+            
+			<center>
+            <div class = "buttons">
+				<button type = "button" onclick= "loadData('Iphn XS')">Iphone XS</button>
+				<button type = "button" onclick= "loadData('Iphn XS Max')">Iphone XS Max</button>
+				<button type = "button" onclick= "loadData('Iphn 8s plus')">Iphone 8s plus</button>
+				<button type = "button" onclick= "PriceForLoop()">Average Price</button>
+			</div><!--buttons-->
+			
+			<img id = "imgOutp" src = "images/Iphone XS Max.jpg" width ="300px" heigth = "300px" ></center>
+			<p id = "outp" ></p>
+			
+			<hr/ class = "hrline">
+			
+			<h4> Created by: Madhavi Imashi <a href = "https://www.courseweb.sliit.lk/"> MIRU </a> </h4>
+			
+		</div><!--wrapper-->	
+		
+		 <script src = "js/myScript.js"> </script>
+	</body>
+</html>
